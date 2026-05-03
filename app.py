@@ -79,12 +79,16 @@ model, feature_names, accuracy = train_model(df)
 # SIDEBAR INPUT
 # =====================================
 st.sidebar.header("Enter Water Parameters")
-
 def user_input():
+    if feature_names is None:
+        st.warning("⚠️ Model not ready. Please check dataset or installation.")
+        return None
+
     inputs = []
     for col in feature_names:
         val = st.sidebar.number_input(f"{col}", value=float(df[col].mean()))
         inputs.append(val)
+
     return pd.DataFrame([inputs], columns=feature_names)
 
 input_df = user_input()
