@@ -17,8 +17,6 @@ Original file is located at
 # =====================================
 import streamlit as st
 import pandas as pd
-
-from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score
 
 # =====================================
