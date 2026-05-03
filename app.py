@@ -132,7 +132,7 @@ time.sleep(5) # Give the app a few seconds to start
 # Use localtunnel to create a public URL for port 8501
 print("Attempting to create a public URL with localtunnel...")
 # 'npx localtunnel' will automatically install localtunnel if not present
-!npx localtunnel --port 8501 > localtunnel_output.log 2>&1 &
+
 
 # Wait for localtunnel to establish connection and print its URL
 time.sleep(5)
