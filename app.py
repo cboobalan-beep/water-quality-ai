@@ -118,7 +118,10 @@ if st.button("Predict Water Quality"):
 # MODEL PERFORMANCE
 # =====================================
 st.subheader("Model Performance")
-st.write(f"Accuracy: {round(accuracy * 100, 2)} %")
+if accuracy is not None:
+    st.write(f"Accuracy: {round(accuracy * 100, 2)} %")
+else:
+    st.warning("⚠️ Model not trained. Please check installation (scikit-learn).")
 
 # =====================================
 # OPTIONAL DATA VIEW
