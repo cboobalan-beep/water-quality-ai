@@ -10,7 +10,7 @@ Original file is located at
 # =====================================
 # INSTALL LIBRARIES
 # =====================================
-!pip install streamlit pandas scikit-learn
+
 
 # =====================================
 # IMPORT LIBRARIES
