@@ -114,7 +114,7 @@ if st.checkbox("Show Dataset"):
     st.write(df.head())
 
 # Kill any existing streamlit processes to free up port 8501
-!pkill -f streamlit
+
 import time
 time.sleep(1) # Give some time for the process to terminate
 
