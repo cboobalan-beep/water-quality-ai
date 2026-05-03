@@ -120,7 +120,6 @@ time.sleep(1) # Give some time for the process to terminate
 
 # Start streamlit in the background, redirecting output to a file
 # This way, it doesn't block the cell and its logs can be inspected if needed.
-!streamlit run /content/1uyrQYUHs2rM.py > streamlit_output.log 2>&1 &
 
 import time
 import urllib.request
